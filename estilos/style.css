@@ -1,14 +1,15 @@
 @import url('root.css');
 
-/* BARRA DE NAVEGACIÓN MÁS GRUESA Y FIJA */
+/* ========================================== */
+/* ESTILOS DEL NAVBAR (INALTERADO Y COMPLETO) */
+/* ========================================== */
 .navbar-custom {
     background-color: var(--color-fondo-header) !important;
-    padding-top: 1.2rem !important;    /* Le da más grosor arriba */
-    padding-bottom: 1.2rem !important; /* Le da más grosor abajo */
-    border-bottom: 3px solid var(--color-brillante); /* Línea brillante abajo */
+    padding-top: 1.2rem !important;
+    padding-bottom: 1.2rem !important;
+    border-bottom: 3px solid var(--color-brillante);
 }
 
-/* TEXTO DEL LOGO */
 .logo-texto {
     color: var(--color-texto-blanco);
     font-weight: 800;
@@ -19,7 +20,6 @@
     color: var(--color-brillante);
 }
 
-/* ENLACES DEL MENÚ */
 .nav-link-custom {
     color: var(--color-texto-blanco) !important;
     font-size: 1.1rem;
@@ -32,7 +32,6 @@
     color: var(--color-brillante) !important;
 }
 
-/* BOTÓN DE CARRITO DE COMPRAS LLAMATIVO */
 .btn-carrito-custom {
     background-color: var(--color-brillante) !important;
     color: #0F172A !important;
@@ -46,4 +45,73 @@
 .btn-carrito-custom:hover {
     background-color: var(--color-brillante-hover) !important;
     transform: scale(1.05);
+}
+
+/* ========================================== */
+/* ESTILOS DEL CONTENEDOR DE INICIO (BANNER)  */
+/* ========================================== */
+.banner-inicio-custom {
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1200') center/cover no-repeat;
+    min-height: 40vh;
+    border-radius: 0px;
+}
+
+/* Estilos de las Cards de Productos en Promoción */
+.card-producto {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-producto:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-brillante) !important;
+}
+
+.card-img-custom {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* ========================================== */
+/* ESTILOS DEL FOOTER (DELGADO Y VERTICAL)    */
+/* ========================================== */
+.footer-custom {
+    background-color: var(--color-fondo-header) !important;
+    border-top: 2px solid var(--color-brillante);
+    font-size: 0.85rem;
+}
+
+.logo-texto-footer {
+    color: var(--color-texto-blanco);
+    font-size: 1.1rem;
+}
+
+.titulo-footer {
+    color: var(--color-brillante);
+    font-weight: 700;
+}
+
+.enlace-footer {
+    color: #94A3B8 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.enlace-footer:hover {
+    color: var(--color-brillante) !important;
+}
+
+.enlace-social {
+    color: #FFFFFF !important;
+    transition: color 0.3s ease;
+}
+
+.enlace-social:hover {
+    color: var(--color-brillante) !important;
+}
+
+/* Lista vertical limpia para los integrantes */
+.equipo-vertical {
+    font-size: 0.8rem;
+    line-height: 1.4;
 }
