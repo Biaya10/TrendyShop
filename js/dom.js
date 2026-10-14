@@ -18,11 +18,15 @@ const containerTarjetas = document.querySelector('.container-tarjetas');
 
 function crearHTMLTarjeta(producto){
   return `
-    <div class="producto-tarjeta">
-      <img src="${producto.image}" alt="${producto.title}" width="100">
-      <p>${producto.title}</p>
-      <p>$${producto.price}</p>
-      <p>${producto.category}</p>
+    <div class="col">
+      <div class="card h-100">
+        <img src="${producto.image}" class="card-img-top" alt="${producto.title}">
+        <div class="card-body">
+          <h5 class="card-title">${producto.title}</h5>
+          <p class="card-text">$${producto.price}</p>
+          <button type="button" class="btn btn-primary btn-sm" data-id="${producto.id}">Agregar al carrito</button>
+        </div>
+      </div>
     </div>
   `;
 }
