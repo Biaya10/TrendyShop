@@ -12,22 +12,22 @@
     />
   </head>
   <body>
-    <main class="container mt-4">
+    <main class="container-fluid mt-4">
       <h1 class="mb-4">Contáctanos</h1>
 
-      <form id="contact-form">
+      <form id="contact-form" class="border rounded p-3 shadow-sm">
         <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
+          <label for="nombre" class="form-label fw-semibold">Nombre</label>
           <input id="nombre" name="nombre" type="text" class="form-control" autocomplete="name" required />
         </div>
 
         <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico</label>
+          <label for="email" class="form-label fw-semibold">Correo electrónico</label>
           <input id="email" name="email" type="email" class="form-control" autocomplete="email" required />
         </div>
 
         <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
+          <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
           <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
         </div>
 
