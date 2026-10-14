@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
   <p id="mensaje-carga" hidden>Cargando productos...</p>
@@ -15,7 +17,9 @@
   <option value="women's clothing">Mujer</option>
   <option value="jewelery">Joyería</option>
 </select>
-  <div class="container-tarjetas"></div>
-  <script type="module" src="./js/main.js"></script>
+<div class="container-fluid mt-4">
+  <div class="container-tarjetas row row-cols-2 row-cols-lg-3 row-cols-xl-4 g-4"></div>
+</div>
+<script type="module" src="./js/main.js"></script>
 </body>
 </html>
