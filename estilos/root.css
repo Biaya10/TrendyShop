@@ -1,0 +1,9 @@
+/* VARIABLES GLOBALES DE COLORES DE TRENDYSHOP */
+/* PALETA DE COLORES LLAMATIVA Y JUVENIL PARA TRENDYSHOP */
+:root {
+    --color-fondo-header: #0F172A; /* Azul Marino Profundo */
+    --color-brillante: #00FF87;     /* Verde Neón/Menta Muy Llamativo */
+    --color-brillante-hover: #00D970; /* Verde más oscuro al pasar el ratón */
+    --color-texto-blanco: #FFFFFF;
+    --color-texto-suave: #94A3B8;
+}

@@ -1,0 +1,49 @@
+@import url('root.css');
+
+/* BARRA DE NAVEGACIÓN MÁS GRUESA Y FIJA */
+.navbar-custom {
+    background-color: var(--color-fondo-header) !important;
+    padding-top: 1.2rem !important;    /* Le da más grosor arriba */
+    padding-bottom: 1.2rem !important; /* Le da más grosor abajo */
+    border-bottom: 3px solid var(--color-brillante); /* Línea brillante abajo */
+}
+
+/* TEXTO DEL LOGO */
+.logo-texto {
+    color: var(--color-texto-blanco);
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.logo-resaltado {
+    color: var(--color-brillante);
+}
+
+/* ENLACES DEL MENÚ */
+.nav-link-custom {
+    color: var(--color-texto-blanco) !important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover, .nav-link-custom.active {
+    color: var(--color-brillante) !important;
+}
+
+/* BOTÓN DE CARRITO DE COMPRAS LLAMATIVO */
+.btn-carrito-custom {
+    background-color: var(--color-brillante) !important;
+    color: #0F172A !important;
+    font-weight: 700 !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 30px !important;
+    transition: transform 0.2s ease, background-color 0.3s ease !important;
+}
+
+.btn-carrito-custom:hover {
+    background-color: var(--color-brillante-hover) !important;
+    transform: scale(1.05);
+}
