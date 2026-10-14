@@ -7,3 +7,17 @@ export function configurarEventoFiltro(callback){
 export function obtenerCategoriaSeleccionada(){
   return selectCategoria.value;
 }
+
+const formBuscar = document.getElementById('formBuscar');
+const inputBuscar = document.getElementById('buscarProducto');
+
+export function configurarEventoBuscar(callback){
+  formBuscar.addEventListener('submit', (evento) => {
+    evento.preventDefault();
+    callback();
+  });
+}
+
+export function obtenerTextoBusqueda(){
+  return inputBuscar.value.trim().toLowerCase();
+}
