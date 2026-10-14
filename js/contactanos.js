@@ -9,7 +9,7 @@ contactForm.addEventListener("submit", (event) => {
   let formIsValid = true;
 
   for (const field of requiredFields) {
-    if (field.value === "") {
+    if (field.value.trim() === "") {
       field.classList.add("is-invalid");
       formIsValid = false;
     } else {
