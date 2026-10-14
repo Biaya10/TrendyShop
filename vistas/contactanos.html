@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contáctanos | TrendyShop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="container-fluid mt-4 row flex-column align-items-center">
+      <h1 class="mb-4 col-12 col-md-8 col-lg-6">Contáctanos</h1>
+
+      <form id="contact-form" class="border rounded p-3 shadow-sm col-12 col-md-8 col-lg-6" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label fw-semibold">Nombre</label>
+          <input id="nombre" name="nombre" type="text" class="form-control" autocomplete="name" required />
+          <div id="nombre-error" class="invalid-feedback">El nombre no puede estar vacío.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+          <input id="email" name="email" type="email" class="form-control" autocomplete="email" required />
+          <div id="email-error" class="invalid-feedback">El correo electrónico no puede estar vacío.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+          <div id="mensaje-error" class="invalid-feedback">El mensaje no puede estar vacío.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </form>
+
+      <div id="confirmation-message" class="alert alert-success mt-3 d-none col-12 col-md-8 col-lg-6">
+        ¡Gracias! El formulario se completó correctamente.
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/contactanos.js"></script>
+  </body>
+</html>
