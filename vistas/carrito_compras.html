@@ -1,0 +1,71 @@
+<div class="offcanvas offcanvas-end carrito-panel" tabindex="-1" id="panelCarrito" aria-labelledby="tituloCarrito"
+    data-bs-backdrop="true" data-bs-scroll="true">
+
+    <div class="offcanvas-header carrito-header">
+        <div>
+            <h5 class="offcanvas-title" id="tituloCarrito">
+                <i class="ri-shopping-bag-3-fill"></i>
+                Mi carrito
+            </h5>
+
+            <small class="text-secondary">
+                Tus productos seleccionados
+            </small>
+        </div>
+
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar carrito"></button>
+    </div>
+
+
+    <div class="offcanvas-body carrito-cuerpo">
+
+        <div class="envio-gratis">
+            <p id="mensajeEnvio" class="mb-2">
+                ¡Te faltan $120.000 COP para obtener envío gratis!
+            </p>
+
+            <div class="progress" role="progressbar" aria-label="Progreso para obtener envío gratis" aria-valuemin="0"
+                aria-valuemax="120000" aria-valuenow="0" id="progresoEnvio">
+                <div id="barraEnvio" class="progress-bar" style="width: 0%"></div>
+            </div>
+        </div>
+
+
+        <div id="listaCarrito">
+            <!-- JavaScript productos -->
+        </div>
+
+
+        <div class="carrito-resumen">
+            <div class="d-flex justify-content-between mb-2">
+                <span>Productos</span>
+                <span id="cantidadCarrito">0</span>
+            </div>
+
+            <div class="d-flex justify-content-between mb-2">
+                <span>Subtotal</span>
+                <span id="subtotalCarrito">$0.00</span>
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-between fw-bold fs-5">
+                <span>Total</span>
+                <span id="totalCarrito">$0.00</span>
+            </div>
+            
+            
+            <button type="button" class="btn btn-outline-danger w-100 mt-3" id="btnVaciarCarrito" disabled>
+                <i class="ri-delete-bin-line"></i>
+                Vaciar carrito
+            </button>
+
+            
+            <button type="button" class="btn btn-dark w-100 mt-2" id="btnContinuarCompra" disabled>
+                Finalizar compra
+            </button>
+        
+        </div>
+
+    </div>
+</div>
