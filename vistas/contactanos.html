@@ -15,20 +15,23 @@
     <main class="container-fluid mt-4">
       <h1 class="mb-4">Contáctanos</h1>
 
-      <form id="contact-form" class="border rounded p-3 shadow-sm">
+      <form id="contact-form" class="border rounded p-3 shadow-sm" novalidate>
         <div class="mb-3">
           <label for="nombre" class="form-label fw-semibold">Nombre</label>
           <input id="nombre" name="nombre" type="text" class="form-control" autocomplete="name" required />
+          <div id="nombre-error" class="invalid-feedback">El nombre no puede estar vacío.</div>
         </div>
 
         <div class="mb-3">
           <label for="email" class="form-label fw-semibold">Correo electrónico</label>
           <input id="email" name="email" type="email" class="form-control" autocomplete="email" required />
+          <div id="email-error" class="invalid-feedback">El correo electrónico no puede estar vacío.</div>
         </div>
 
         <div class="mb-3">
           <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
           <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+          <div id="mensaje-error" class="invalid-feedback">El mensaje no puede estar vacío.</div>
         </div>
 
         <button type="submit" class="btn btn-primary">Enviar mensaje</button>
