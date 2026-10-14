@@ -1,15 +1,18 @@
 import { buscarProductos } from "./api.js";
 import { productosRespaldo } from "./productos.js";
 import { mostrarMensajeCarga, ocultarMensajeCarga, mostrarMensajeError, renderizarProductos} from "./dom.js";
-import { filtrarRopaYJoyeria, filtrarPorCategoria } from "./utils.js";
-import { configurarEventoFiltro, obtenerCategoriaSeleccionada } from "./events.js";
+import { filtrarRopaYJoyeria, filtrarPorCategoria, filtrarPorNombre } from "./utils.js";
+import { configurarEventoFiltro, obtenerCategoriaSeleccionada, configurarEventoBuscar, obtenerTextoBusqueda } from "./events.js";
 
 
 let listaProductos = [];
 
-function manejarFiltro(){
+function aplicarFiltros(){
   const categoria = obtenerCategoriaSeleccionada();
-  const productosFiltrados = filtrarPorCategoria(listaProductos, categoria);
+  const texto = obtenerTextoBusqueda();
+
+  let productosFiltrados = filtrarPorCategoria(listaProductos, categoria);
+  productosFiltrados = filtrarPorNombre(productosFiltrados, texto);
 
   renderizarProductos(productosFiltrados);
 }
@@ -29,7 +32,8 @@ async function inicializar(){
   
   console.log('lista:',listaProductos);
   renderizarProductos(listaProductos);
-  configurarEventoFiltro(manejarFiltro);
+  configurarEventoFiltro(aplicarFiltros);
+  configurarEventoBuscar(aplicarFiltros);
 
 }
 
