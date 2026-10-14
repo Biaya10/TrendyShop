@@ -7,3 +7,9 @@ export function mostrarMensajeCarga(){
 export function ocultarMensajeCarga(){
   mensajeCarga.hidden = true;
 }
+
+const mensajeError = document.getElementById('mensaje-error');
+
+export function mostrarMensajeError(){
+  mensajeError.hidden = false;
+}

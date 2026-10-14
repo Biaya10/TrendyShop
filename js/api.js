@@ -6,7 +6,7 @@ export async function buscarProductos() {
     if (!response.ok) throw new Error('Error al conectar con la API');
 
     const listaProductos = await response.json();
-    return listaProductos;
+    return listaProductos
   }catch (error) { 
         console.log('Hubo un error al buscar los productos: ', error.message);
         return [];
