@@ -10,3 +10,12 @@ export function filtrarPorCategoria(listaProductos, categoria){
 
   return listaProductos.filter(producto => producto.category === categoria);
 }
+
+const formatoUSD = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD'
+});
+
+export function formatearPrecio(precio){
+  return formatoUSD.format(precio);
+}
