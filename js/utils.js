@@ -11,6 +11,14 @@ export function filtrarPorCategoria(listaProductos, categoria){
   return listaProductos.filter(producto => producto.category === categoria);
 }
 
+export function filtrarPorNombre(listaProductos, texto){
+  if(texto === '') return listaProductos;
+
+  return listaProductos.filter(producto =>
+    producto.title.toLowerCase().includes(texto)
+  );
+}
+
 const formatoUSD = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD'

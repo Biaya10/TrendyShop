@@ -34,6 +34,10 @@ function crearHTMLTarjeta(producto){
 }
 
 export function renderizarProductos(listaProductos){
+    if(listaProductos.length === 0){
+    containerTarjetas.innerHTML = '<p>No se encontraron productos.</p>';
+    return;
+  }
   containerTarjetas.innerHTML = '';
 
   for(let producto of listaProductos){
