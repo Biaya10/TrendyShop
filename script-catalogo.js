@@ -1,3 +1,10 @@
+//Se reemplazó este archivo por el main.js para la consulta de API 
+//Se reemplazó este archivo por el main.js para la consulta de API 
+//Se reemplazó este archivo por el main.js para la consulta de API 
+//Se reemplazó este archivo por el main.js para la consulta de API 
+//Se reemplazó este archivo por el main.js para la consulta de API 
+//Se reemplazó este archivo por el main.js para la consulta de API 
+//Se reemplazó este archivo por el main.js para la consulta de API 
 
 console.log('script-catalogo.js se está ejecutando');
 

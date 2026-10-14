@@ -5,7 +5,7 @@ export const productosRespaldo = [
     price: 22.3,
     description: "Slim-fitting style, contrast raglan long sleeve, light weight & soft fabric for breathable and comfortable wearing.",
     category: "men's clothing",
-    image: "./img/producto-2.png"
+    image: "../img/producto-2.png"
   },
   {
     id: 3,
@@ -13,7 +13,7 @@ export const productosRespaldo = [
     price: 55.99,
     description: "Great outerwear jacket for Spring/Autumn/Winter, suitable for working, hiking, camping or traveling.",
     category: "men's clothing",
-    image: "./img/producto-3.png"
+    image: "../img/producto-3.png"
   },
   {
     id: 5,
@@ -21,7 +21,7 @@ export const productosRespaldo = [
     price: 695,
     description: "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl.",
     category: "jewelery",
-    image: "./img/producto-5.png"
+    image: "../img/producto-5.png"
   },
   {
     id: 6,
@@ -29,7 +29,7 @@ export const productosRespaldo = [
     price: 168,
     description: "Satisfaction Guaranteed. Return or exchange any order within 30 days.",
     category: "jewelery",
-    image: "./img/producto-6.png"
+    image: "../img/producto-6.png"
   },
   {
     id: 15,
@@ -37,7 +37,7 @@ export const productosRespaldo = [
     price: 56.99,
     description: "100% Polyester with detachable warm fleece liner, adjustable hood and zippered pockets.",
     category: "women's clothing",
-    image: "./img/producto-15.png"
+    image: "../img/producto-15.png"
   },
   {
     id: 16,
@@ -45,7 +45,7 @@ export const productosRespaldo = [
     price: 29.95,
     description: "Faux leather jacket with removable hood, two front pockets and button detail on waist.",
     category: "women's clothing",
-    image: "./img/producto-16.png"
+    image: "../img/producto-16.png"
   }
  
 ];
