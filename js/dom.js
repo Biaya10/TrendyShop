@@ -1,3 +1,5 @@
+import { formatearPrecio } from "./utils.js";
+
 const mensajeCarga = document.getElementById('mensaje-carga');
 
 export function mostrarMensajeCarga(){
@@ -23,7 +25,7 @@ function crearHTMLTarjeta(producto){
         <img src="${producto.image}" class="card-img-top" alt="${producto.title}">
         <div class="card-body">
           <h5 class="card-title">${producto.title}</h5>
-          <p class="card-text">$${producto.price}</p>
+          <p class="card-text">${formatearPrecio(producto.price)}</p>
           <button type="button" class="btn btn-primary btn-sm" data-id="${producto.id}">Agregar al carrito</button>
         </div>
       </div>
