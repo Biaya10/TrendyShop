@@ -12,10 +12,10 @@
     />
   </head>
   <body>
-    <main class="container-fluid mt-4">
-      <h1 class="mb-4">Contáctanos</h1>
+    <main class="container-fluid mt-4 row flex-column align-items-center">
+      <h1 class="mb-4 col-12 col-md-8 col-lg-6">Contáctanos</h1>
 
-      <form id="contact-form" class="border rounded p-3 shadow-sm" novalidate>
+      <form id="contact-form" class="border rounded p-3 shadow-sm col-12 col-md-8 col-lg-6" novalidate>
         <div class="mb-3">
           <label for="nombre" class="form-label fw-semibold">Nombre</label>
           <input id="nombre" name="nombre" type="text" class="form-control" autocomplete="name" required />
@@ -37,7 +37,7 @@
         <button type="submit" class="btn btn-primary">Enviar mensaje</button>
       </form>
 
-      <div id="confirmation-message" class="alert alert-success mt-3 d-none" role="status">
+      <div id="confirmation-message" class="alert alert-success mt-3 d-none col-12 col-md-8 col-lg-6">
         ¡Gracias! El formulario se completó correctamente.
       </div>
     </main>
